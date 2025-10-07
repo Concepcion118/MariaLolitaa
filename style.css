@@ -1,0 +1,157 @@
+/* ✨ Egypt Trade Portal - Desert & Pyramid Theme ✨ */
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Poppins:wght@400;600&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: #2e2e2e;
+  background: linear-gradient(to bottom, #fceabb, #f8b500);
+}
+
+/* HEADER WITH PYRAMID BACKGROUND */
+header {
+  background-image: url('https://images.unsplash.com/photo-1504610926078-a1611febcad3?auto=format&fit=crop&w=1920&q=80');
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  position: relative;
+  text-align: center;
+  color: #fff;
+}
+
+header .overlay {
+  background: rgba(0, 0, 0, 0.55);
+  height: 100%;
+  padding: 2rem;
+}
+
+.flag {
+  width: 90px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+header h1 {
+  font-family: 'Marcellus', serif;
+  font-size: 2.5rem;
+  color: #ffd700;
+  text-shadow: 2px 2px 6px #000;
+}
+
+header p {
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+/* NAVIGATION */
+nav {
+  background-color: #b8860b;
+  text-align: center;
+  padding: 0.7rem 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ffd700;
+}
+
+/* CONTENT SECTIONS */
+main {
+  padding: 2rem;
+  background-image: url('https://www.transparenttextures.com/patterns/sandpaper.png');
+}
+
+section {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+h2 {
+  color: #b22222;
+  text-align: center;
+  font-family: 'Marcellus', serif;
+  letter-spacing: 1px;
+}
+
+/* TABLE DESIGN */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+th, td {
+  border: 1px solid #d1a655;
+  padding: 12px;
+  text-align: center;
+}
+
+th {
+  background-color: #b8860b;
+  color: #fff;
+}
+
+tr:nth-child(even) {
+  background-color: #fffaf0;
+}
+
+/* GRID CARDS */
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.card {
+  background: #fff8dc;
+  padding: 1.5rem;
+  border-radius: 10px;
+  width: 300px;
+  border: 1px solid #d2b48c;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+
+.card h3 {
+  text-align: center;
+  color: #8b4513;
+}
+
+/* BANKS */
+ul.banks {
+  list-style-type: '💰 ';
+  font-size: 1.1rem;
+  line-height: 1.8rem;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  background-color: #222;
+  color: #f1f1f1;
+  padding: 1rem;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}
