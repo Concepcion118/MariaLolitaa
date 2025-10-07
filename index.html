@@ -46,75 +46,226 @@
 
   <main class="container">
     <section id="exports">
-      <h2><i class="fas fa-arrow-up"></i> Egypt's Major Export Products</h2>
+      <h2><i class="fas fa-arrow-up"></i> Egypt's Export Products for Trade Simulation</h2>
+      <p>Egypt offers a diverse range of high-quality export products. Below are the five products we are selling in the trade simulation:</p>
+      
       <table>
         <tr>
           <th>Product</th>
           <th>HS Code</th>
-          <th>Value (USD)</th>
+          <th>Description</th>
+          <th>Details</th>
         </tr>
         <tr>
           <td><i class="fas fa-gas-pump"></i> Crude Petroleum</td>
           <td>270900</td>
-          <td>$12.4B</td>
+          <td>High-quality crude oil for refining</td>
+          <td><button class="details-btn" onclick="toggleDetails('petroleum')">Details</button></td>
         </tr>
         <tr>
           <td><i class="fas fa-gem"></i> Gold</td>
           <td>710812</td>
-          <td>$8.7B</td>
+          <td>Refined gold bullion and semi-manufactured forms</td>
+          <td><button class="details-btn" onclick="toggleDetails('gold')">Details</button></td>
         </tr>
         <tr>
           <td><i class="fas fa-flask"></i> Fertilizers (Nitrogen-based)</td>
           <td>310210</td>
-          <td>$3.2B</td>
+          <td>Urea and ammonium nitrate fertilizers</td>
+          <td><button class="details-btn" onclick="toggleDetails('fertilizers')">Details</button></td>
         </tr>
         <tr>
           <td><i class="fas fa-tshirt"></i> Cotton Yarn</td>
           <td>520523</td>
-          <td>$2.8B</td>
+          <td>Premium Egyptian cotton yarn for textiles</td>
+          <td><button class="details-btn" onclick="toggleDetails('cotton')">Details</button></td>
         </tr>
         <tr>
           <td><i class="fas fa-apple-alt"></i> Fresh Oranges</td>
           <td>080510</td>
-          <td>$1.5B</td>
+          <td>Fresh Valencia and navel oranges</td>
+          <td><button class="details-btn" onclick="toggleDetails('oranges')">Details</button></td>
         </tr>
       </table>
+      
+      <div id="petroleum" class="product-details">
+        <h3>Crude Petroleum Details</h3>
+        <p><strong>Quality:</strong> Light sweet crude with API gravity of 33°</p>
+        <p><strong>Packaging:</strong> Standard oil barrels and tanker shipments</p>
+        <p><strong>Minimum Order:</strong> 10,000 barrels</p>
+        <p><strong>Origin:</strong> Gulf of Suez and Western Desert fields</p>
+      </div>
+      
+      <div id="gold" class="product-details">
+        <h3>Gold Details</h3>
+        <p><strong>Purity:</strong> 99.5% to 99.99% fine gold</p>
+        <p><strong>Forms Available:</strong> Bullion bars, granules, and semi-manufactured forms</p>
+        <p><strong>Certification:</strong> London Bullion Market Association (LBMA) certified</p>
+        <p><strong>Origin:</strong> Sukari Gold Mine and other Egyptian mines</p>
+      </div>
+      
+      <div id="fertilizers" class="product-details">
+        <h3>Fertilizers Details</h3>
+        <p><strong>Types:</strong> Urea (46% nitrogen), Ammonium Nitrate (34% nitrogen)</p>
+        <p><strong>Packaging:</strong> 50kg bags or bulk shipments</p>
+        <p><strong>Production Capacity:</strong> 7 million tons annually</p>
+        <p><strong>Standards:</strong> ISO 9001 certified production facilities</p>
+      </div>
+      
+      <div id="cotton" class="product-details">
+        <h3>Cotton Yarn Details</h3>
+        <p><strong>Type:</strong> Extra-long staple Egyptian cotton</p>
+        <p><strong>Yarn Count:</strong> 20s to 80s Ne</p>
+        <p><strong>Packaging:</strong> 25kg cones or custom packaging</p>
+        <p><strong>Special Features:</strong> Superior strength, softness, and luster</p>
+      </div>
+      
+      <div id="oranges" class="product-details">
+        <h3>Fresh Oranges Details</h3>
+        <p><strong>Varieties:</strong> Valencia, Navel, and Blood oranges</p>
+        <p><strong>Season:</strong> November to May</p>
+        <p><strong>Packaging:</strong> 15kg cartons or bulk containers</p>
+        <p><strong>Quality Standards:</strong> GlobalGAP certified, EU standards compliant</p>
+      </div>
     </section>
 
     <section id="imports">
-      <h2><i class="fas fa-arrow-down"></i> Egypt's Major Import Products</h2>
+      <h2><i class="fas fa-arrow-down"></i> Egypt's Import Products for Trade Simulation</h2>
+      <p>Egypt seeks to import the following products for domestic consumption and industrial use:</p>
+      
       <table>
         <tr>
           <th>Product</th>
           <th>HS Code</th>
-          <th>Value (USD)</th>
+          <th>Description</th>
+          <th>Details</th>
         </tr>
         <tr>
           <td><i class="fas fa-bread-slice"></i> Wheat and Meslin</td>
           <td>100199</td>
-          <td>$5.6B</td>
+          <td>High-quality wheat for bread production</td>
+          <td><button class="details-btn" onclick="toggleDetails('wheat')">Details</button></td>
         </tr>
         <tr>
           <td><i class="fas fa-car"></i> Cars and Motor Vehicles</td>
           <td>870323</td>
-          <td>$4.3B</td>
+          <td>Passenger vehicles with engine capacity 1500-3000cc</td>
+          <td><button class="details-btn" onclick="toggleDetails('cars')">Details</button></td>
         </tr>
         <tr>
           <td><i class="fas fa-pills"></i> Pharmaceutical Products</td>
           <td>300490</td>
-          <td>$3.8B</td>
+          <td>Medicaments for therapeutic use</td>
+          <td><button class="details-btn" onclick="toggleDetails('pharma')">Details</button></td>
         </tr>
         <tr>
           <td><i class="fas fa-cogs"></i> Machinery & Equipment</td>
           <td>847130</td>
-          <td>$3.5B</td>
+          <td>Industrial machinery for manufacturing</td>
+          <td><button class="details-btn" onclick="toggleDetails('machinery')">Details</button></td>
         </tr>
         <tr>
           <td><i class="fas fa-mobile-alt"></i> Electronics (Mobile Phones)</td>
           <td>851712</td>
-          <td>$2.9B</td>
+          <td>Smartphones and mobile communication devices</td>
+          <td><button class="details-btn" onclick="toggleDetails('electronics')">Details</button></td>
+        </tr>
+        <tr>
+          <td><i class="fas fa-oil-can"></i> Soybean Oil</td>
+          <td>150710</td>
+          <td>Crude and refined soybean oil for food industry</td>
+          <td><button class="details-btn" onclick="toggleDetails('soybean')">Details</button></td>
+        </tr>
+        <tr>
+          <td><i class="fas fa-industry"></i> Iron and Steel</td>
+          <td>720839</td>
+          <td>Iron and non-alloy steel in primary forms</td>
+          <td><button class="details-btn" onclick="toggleDetails('steel')">Details</button></td>
+        </tr>
+        <tr>
+          <td><i class="fas fa-cube"></i> Plastic Materials</td>
+          <td>390120</td>
+          <td>Polymers of ethylene in primary forms</td>
+          <td><button class="details-btn" onclick="toggleDetails('plastic')">Details</button></td>
+        </tr>
+        <tr>
+          <td><i class="fas fa-seedling"></i> Corn (Maize)</td>
+          <td>100590</td>
+          <td>Maize for animal feed and food processing</td>
+          <td><button class="details-btn" onclick="toggleDetails('corn')">Details</button></td>
+        </tr>
+        <tr>
+          <td><i class="fas fa-coffee"></i> Coffee</td>
+          <td>090111</td>
+          <td>Arabica coffee beans, not roasted</td>
+          <td><button class="details-btn" onclick="toggleDetails('coffee')">Details</button></td>
         </tr>
       </table>
+
+      <div id="wheat" class="product-details">
+        <h3>Wheat Import Requirements</h3>
+        <p><strong>Type:</strong> Hard red winter wheat or equivalent</p>
+        <p><strong>Protein Content:</strong> Minimum 12%</p>
+        <p><strong>Moisture:</strong> Maximum 14%</p>
+        <p><strong>Quantity Needed:</strong> 10+ million tons annually</p>
+      </div>
+
+      <div id="cars" class="product-details">
+        <h3>Vehicle Import Requirements</h3>
+        <p><strong>Types:</strong> Sedans, SUVs, and compact cars</p>
+        <p><strong>Engine Size:</strong> 1500cc to 3000cc preferred</p>
+        <p><strong>Emission Standards:</strong> Euro 5 or higher</p>
+        <p><strong>Right-hand drive vehicles not accepted</strong></p>
+      </div>
+
+      <div id="pharma" class="product-details">
+        <h3>Pharmaceutical Requirements</h3>
+        <p><strong>Registration:</strong> Must be registered with Egyptian Drug Authority</p>
+        <p><strong>Standards:</strong> WHO GMP certified manufacturing</p>
+        <p><strong>Documentation:</strong> Certificate of Analysis required</p>
+        <p><strong>Labeling:</strong> Arabic labeling required for consumer products</p>
+      </div>
+
+      <div id="machinery" class="product-details">
+        <h3>Machinery Import Requirements</h3>
+        <p><strong>Types:</strong> Textile, food processing, and packaging machinery</p>
+        <p><strong>Age:</strong> Maximum 5 years old</p>
+        <p><strong>Standards:</strong> CE marking or equivalent safety certification</p>
+        <p><strong>Service:</strong> Local technical support preferred</p>
+      </div>
+
+      <div id="electronics" class="product-details">
+        <h3>Electronics Import Requirements</h3>
+        <p><strong>Types:</strong> Smartphones, tablets, and accessories</p>
+        <p><strong>Standards:</strong> Must comply with Egyptian National Telecom Regulations</p>
+        <p><strong>Warranty:</strong> Minimum 1-year local warranty required</p>
+        <p><strong>Language:</strong> Arabic interface and documentation preferred</p>
+      </div>
+
+      <div id="soybean" class="product-details">
+        <h3>Soybean Oil Details</h3>
+        <p>Details coming soon...</p>
+      </div>
+
+      <div id="steel" class="product-details">
+        <h3>Iron and Steel Details</h3>
+        <p>Details coming soon...</p>
+      </div>
+
+      <div id="plastic" class="product-details">
+        <h3>Plastic Materials Details</h3>
+        <p>Details coming soon...</p>
+      </div>
+
+      <div id="corn" class="product-details">
+        <h3>Corn (Maize) Details</h3>
+        <p>Details coming soon...</p>
+      </div>
+
+      <div id="coffee" class="product-details">
+        <h3>Coffee Details</h3>
+        <p>Details coming soon...</p>
+      </div>
     </section>
 
     <section id="ports">
@@ -123,19 +274,21 @@
         <div class="card">
           <h3><i class="fas fa-plane-departure"></i> Major Airports</h3>
           <ul>
-            <li><i class="fas fa-map-marker-alt"></i> Cairo International Airport (CAI)</li>
-            <li><i class="fas fa-map-marker-alt"></i> Hurghada International Airport (HRG)</li>
-            <li><i class="fas fa-map-marker-alt"></i> Luxor International Airport (LXR)</li>
-            <li><i class="fas fa-map-marker-alt"></i> Sharm El Sheikh International Airport (SSH)</li>
+            <li><i class="fas fa-map-marker-alt"></i> <strong>Cairo International Airport (CAI)</strong> - Egypt's primary international gateway with 3 terminals</li>
+            <li><i class="fas fa-map-marker-alt"></i> <strong>Hurghada International Airport (HRG)</strong> - Major tourist destination on Red Sea</li>
+            <li><i class="fas fa-map-marker-alt"></i> <strong>Luxor International Airport (LXR)</strong> - Gateway to ancient Egyptian monuments</li>
+            <li><i class="fas fa-map-marker-alt"></i> <strong>Sharm El Sheikh International Airport (SSH)</strong> - Popular resort destination airport</li>
+            <li><i class="fas fa-map-marker-alt"></i> <strong>Alexandria International Airport (HBE)</strong> - Serving Egypt's second largest city</li>
           </ul>
         </div>
         <div class="card">
           <h3><i class="fas fa-anchor"></i> Major Seaports</h3>
           <ul>
-            <li><i class="fas fa-map-marker-alt"></i> Port of Alexandria</li>
-            <li><i class="fas fa-map-marker-alt"></i> Port Said</li>
-            <li><i class="fas fa-map-marker-alt"></i> Port of Damietta</li>
-            <li><i class="fas fa-map-marker-alt"></i> Port of Suez</li>
+            <li><i class="fas fa-map-marker-alt"></i> <strong>Port of Alexandria</strong> - Egypt's main commercial port handling 60% of foreign trade</li>
+            <li><i class="fas fa-map-marker-alt"></i> <strong>Port Said</strong> - Strategic location at Mediterranean entrance to Suez Canal</li>
+            <li><i class="fas fa-map-marker-alt"></i> <strong>Port of Damietta</strong> - Important container and Ro-Ro terminal</li>
+            <li><i class="fas fa-map-marker-alt"></i> <strong>Port of Suez</strong> - Key port at southern entrance to Suez Canal</li>
+            <li><i class="fas fa-map-marker-alt"></i> <strong>Ain Sokhna Port</strong> - Industrial port on Gulf of Suez with direct canal access</li>
           </ul>
         </div>
       </div>
@@ -145,78 +298,39 @@
       <h2><i class="fas fa-university"></i> Major Banks in Egypt</h2>
       <ul class="banks">
         <li>
-          <strong>National Bank of Egypt (NBE)</strong> – The largest and oldest commercial bank in Egypt, 
-          offering comprehensive trade finance solutions and international banking services.
+          <strong>National Bank of Egypt (NBE)</strong> – Established in 1898, NBE is the largest and oldest commercial bank in Egypt. 
+          It offers comprehensive trade finance solutions including letters of credit, documentary collections, and bank guarantees. 
+          With over 500 branches nationwide and correspondent relationships with 1,400 international banks, NBE facilitates international 
+          trade transactions efficiently. The bank provides specialized services for import/export businesses and has a dedicated 
+          international banking division.
         </li>
         <li>
-          <strong>Banque Misr</strong> – A leading public sector bank supporting trade and development 
-          with extensive branch network and digital banking platforms.
+          <strong>Banque Misr</strong> – Founded in 1920, Banque Misr is a leading public sector bank supporting trade and development. 
+          It offers a wide range of trade finance instruments and has a strong presence in international markets with representative 
+          offices worldwide. The bank provides competitive financing for export-oriented industries and has digital platforms for 
+          efficient trade document processing. Banque Misr is particularly strong in financing agricultural exports and textile industries.
         </li>
-      
       </ul>
     </section>
   </main>
 
-  <footer>
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-column">
-          <h3>Egypt Trade Portal</h3>
-          <p>Your gateway to trade opportunities in Egypt, connecting global partners with Egyptian markets.</p>
-          <div class="social-icons">
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-          </div>
-        </div>
-        <div class="footer-column">
-          <h3>Quick Links</h3>
-          <ul class="footer-links">
-            <li><a href="#"><i class="fas fa-chevron-right"></i> About Us</a></li>
-            <li><a href="#"><i class="fas fa-chevron-right"></i> Trade Statistics</a></li>
-            <li><a href="#"><i class="fas fa-chevron-right"></i> Investment Opportunities</a></li>
-            <li><a href="#"><i class="fas fa-chevron-right"></i> Contact</a></li>
-          </ul>
-        </div>
-        <div class="footer-column">
-          <h3>Resources</h3>
-          <ul class="footer-links">
-            <li><a href="#"><i class="fas fa-chevron-right"></i> Trade Regulations</a></li>
-            <li><a href="#"><i class="fas fa-chevron-right"></i> Customs Procedures</a></li>
-            <li><a href="#"><i class="fas fa-chevron-right"></i> Market Research</a></li>
-            <li><a href="#"><i class="fas fa-chevron-right"></i> Business Directory</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="copyright">
-        © 2025 Egypt Trade Portal | Designed for Global Trade Simulation
-      </div>
-    </div>
-  </footer>
+  <footer> <div class="container"> <div class="footer-content"> <div class="footer-column"> <h3>Egypt Trade Portal</h3> <p>Your gateway to trade opportunities in Egypt, connecting global partners with Egyptian markets.</p> <div class="social-icons"> <a href="#"><i class="fab fa-twitter"></i></a> <a href="#"><i class="fab fa-facebook-f"></i></a> <a href="#"><i class="fab fa-linkedin-in"></i></a> <a href="#"><i class="fab fa-instagram"></i></a> </div> </div> <div class="footer-column"> <h3>Quick Links</h3> <ul class="footer-links"> <li><a href="#exports"><i class="fas fa-chevron-right"></i> Export Products</a></li> <li><a href="#imports"><i class="fas fa-chevron-right"></i> Import Requirements</a></li> <li><a href="#ports"><i class="fas fa-chevron-right"></i> Ports Information</a></li> <li><a href="#banks"><i class="fas fa-chevron-right"></i> Banking Partners</a></li> </ul> </div> <div class="footer-column"> <h3>Trade Resources</h3> <ul class="footer-links"> <li><a href="#"><i class="fas fa-chevron-right"></i> Customs Procedures</a></li> <li><a href="#"><i class="fas fa-chevron-right"></i> Tariff Information</a></li> <li><a href="#"><i class="fas fa-chevron-right"></i> Trade Regulations</a></li> <li><a href="#"><i class="fas fa-chevron-right"></i> Market Research</a></li> </ul> </div> <div class="footer-column"> <h3>Contact Information</h3> <ul class="footer-links"> <li><a href="#"><i class="fas fa-chevron-right"></i> Ministry of Trade</a></li> <li><a href="#"><i class="fas fa-chevron-right"></i> Export Development Authority</a></li> <li><a href="#"><i class="fas fa-chevron-right"></i> Customs Authority</a></li> <li><a href="#"><i class="fas fa-chevron-right"></i> Investment Authority</a></li> </ul> </div> </div> <div class="copyright"> © 2025 Egypt Trade Portal | Designed for Global Trade Simulation </div> </div> </footer>
 
   <script>
-    // Add scroll animation for sections
-    document.addEventListener('DOMContentLoaded', function() {
-      const sections = document.querySelectorAll('section');
-      
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.style.opacity = 1;
-            entry.target.style.transform = 'translateY(0)';
-          }
-        });
-      }, { threshold: 0.1 });
-      
-      sections.forEach(section => {
-        section.style.opacity = 0;
-        section.style.transform = 'translateY(20px)';
-        section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-        observer.observe(section);
+    function toggleDetails(productId) {
+      const details = document.getElementById(productId);
+      if (!details) return;
+
+      // Hide all other detail sections
+      const allDetails = document.querySelectorAll('.product-details');
+      allDetails.forEach(d => {
+        if (d.id !== productId) d.classList.remove('show-details');
       });
-    });
+
+      // Toggle current one
+      details.classList.toggle('show-details');
+    }
   </script>
 </body>
 </html>
-
+  
