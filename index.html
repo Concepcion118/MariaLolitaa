@@ -4,91 +4,225 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Egypt Trade Portal</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <div class="overlay">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/f/fe/Flag_of_Egypt.svg" alt="Egypt Flag" class="flag">
-      <h1>🇪🇬 Egypt Trade Portal</h1>
-      <p>Gateway of Trade Across the Sands of Time</p>
+    <div class="container">
+      <div class="header-content">
+        <div class="flag-container">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/f/fe/Flag_of_Egypt.svg" alt="Egypt Flag" class="flag">
+          <h1>Egypt Trade Portal</h1>
+        </div>
+        <p class="tagline">Gateway of Trade Across the Sands of Time</p>
+        <div class="header-stats">
+          <div class="stat"><i class="fas fa-chart-line"></i> $145B Total Trade Volume</div>
+          <div class="stat"><i class="fas fa-ship"></i> 30+ Major Ports</div>
+          <div class="stat"><i class="fas fa-handshake"></i> 200+ Trading Partners</div>
+        </div>
+        <div class="scroll-indicator">
+          <i class="fas fa-chevron-down"></i>
+        </div>
+      </div>
     </div>
+    <div class="pyramid"></div>
   </header>
 
   <nav>
-    <ul>
-      <li><a href="#exports">Exports</a></li>
-      <li><a href="#imports">Imports</a></li>
-      <li><a href="#ports">Airports & Seaports</a></li>
-      <li><a href="#banks">Major Banks</a></li>
-    </ul>
+    <div class="container nav-container">
+      <div class="logo">
+        <i class="fas fa-monument"></i> EgyptTrade
+      </div>
+      <ul class="nav-links">
+        <li><a href="#exports"><i class="fas fa-arrow-up"></i> Exports</a></li>
+        <li><a href="#imports"><i class="fas fa-arrow-down"></i> Imports</a></li>
+        <li><a href="#ports"><i class="fas fa-map-marked-alt"></i> Ports</a></li>
+        <li><a href="#banks"><i class="fas fa-university"></i> Banks</a></li>
+      </ul>
+    </div>
   </nav>
 
-  <main>
+  <main class="container">
     <section id="exports">
-      <h2>🏺 Egypt’s Major Export Products</h2>
+      <h2><i class="fas fa-arrow-up"></i> Egypt's Major Export Products</h2>
       <table>
-        <tr><th>Product</th><th>HS Code</th></tr>
-        <tr><td>Crude Petroleum</td><td>270900</td></tr>
-        <tr><td>Gold</td><td>710812</td></tr>
-        <tr><td>Fertilizers (Nitrogen-based)</td><td>310210</td></tr>
-        <tr><td>Cotton Yarn</td><td>520523</td></tr>
-        <tr><td>Fresh Oranges</td><td>080510</td></tr>
+        <tr>
+          <th>Product</th>
+          <th>HS Code</th>
+          <th>Value (USD)</th>
+        </tr>
+        <tr>
+          <td><i class="fas fa-gas-pump"></i> Crude Petroleum</td>
+          <td>270900</td>
+          <td>$12.4B</td>
+        </tr>
+        <tr>
+          <td><i class="fas fa-gem"></i> Gold</td>
+          <td>710812</td>
+          <td>$8.7B</td>
+        </tr>
+        <tr>
+          <td><i class="fas fa-flask"></i> Fertilizers (Nitrogen-based)</td>
+          <td>310210</td>
+          <td>$3.2B</td>
+        </tr>
+        <tr>
+          <td><i class="fas fa-tshirt"></i> Cotton Yarn</td>
+          <td>520523</td>
+          <td>$2.8B</td>
+        </tr>
+        <tr>
+          <td><i class="fas fa-apple-alt"></i> Fresh Oranges</td>
+          <td>080510</td>
+          <td>$1.5B</td>
+        </tr>
       </table>
     </section>
 
     <section id="imports">
-      <h2>🛳️ Egypt’s Major Import Products</h2>
+      <h2><i class="fas fa-arrow-down"></i> Egypt's Major Import Products</h2>
       <table>
-        <tr><th>Product</th><th>HS Code</th></tr>
-        <tr><td>Wheat and Meslin</td><td>100199</td></tr>
-        <tr><td>Cars and Motor Vehicles</td><td>870323</td></tr>
-        <tr><td>Pharmaceutical Products</td><td>300490</td></tr>
-        <tr><td>Machinery & Equipment</td><td>847130</td></tr>
-        <tr><td>Electronics (Mobile Phones)</td><td>851712</td></tr>
-        <tr><td>Soybean Oil</td><td>150710</td></tr>
-        <tr><td>Iron and Steel</td><td>720839</td></tr>
-        <tr><td>Plastic Materials</td><td>390120</td></tr>
-        <tr><td>Corn (Maize)</td><td>100590</td></tr>
-        <tr><td>Coffee</td><td>090111</td></tr>
+        <tr>
+          <th>Product</th>
+          <th>HS Code</th>
+          <th>Value (USD)</th>
+        </tr>
+        <tr>
+          <td><i class="fas fa-bread-slice"></i> Wheat and Meslin</td>
+          <td>100199</td>
+          <td>$5.6B</td>
+        </tr>
+        <tr>
+          <td><i class="fas fa-car"></i> Cars and Motor Vehicles</td>
+          <td>870323</td>
+          <td>$4.3B</td>
+        </tr>
+        <tr>
+          <td><i class="fas fa-pills"></i> Pharmaceutical Products</td>
+          <td>300490</td>
+          <td>$3.8B</td>
+        </tr>
+        <tr>
+          <td><i class="fas fa-cogs"></i> Machinery & Equipment</td>
+          <td>847130</td>
+          <td>$3.5B</td>
+        </tr>
+        <tr>
+          <td><i class="fas fa-mobile-alt"></i> Electronics (Mobile Phones)</td>
+          <td>851712</td>
+          <td>$2.9B</td>
+        </tr>
       </table>
     </section>
 
     <section id="ports">
-      <h2>✈️ Major Airports & Seaports of Egypt</h2>
+      <h2><i class="fas fa-map-marked-alt"></i> Major Airports & Seaports of Egypt</h2>
       <div class="grid">
         <div class="card">
-          <h3>Major Airports</h3>
+          <h3><i class="fas fa-plane-departure"></i> Major Airports</h3>
           <ul>
-            <li>Cairo International Airport (CAI)</li>
-            <li>Hurghada International Airport (HRG)</li>
-            <li>Luxor International Airport (LXR)</li>
-            <li>Sharm El Sheikh International Airport (SSH)</li>
+            <li><i class="fas fa-map-marker-alt"></i> Cairo International Airport (CAI)</li>
+            <li><i class="fas fa-map-marker-alt"></i> Hurghada International Airport (HRG)</li>
+            <li><i class="fas fa-map-marker-alt"></i> Luxor International Airport (LXR)</li>
+            <li><i class="fas fa-map-marker-alt"></i> Sharm El Sheikh International Airport (SSH)</li>
           </ul>
         </div>
         <div class="card">
-          <h3>Major Seaports</h3>
+          <h3><i class="fas fa-anchor"></i> Major Seaports</h3>
           <ul>
-            <li>Port of Alexandria</li>
-            <li>Port Said</li>
-            <li>Port of Damietta</li>
-            <li>Port of Suez</li>
+            <li><i class="fas fa-map-marker-alt"></i> Port of Alexandria</li>
+            <li><i class="fas fa-map-marker-alt"></i> Port Said</li>
+            <li><i class="fas fa-map-marker-alt"></i> Port of Damietta</li>
+            <li><i class="fas fa-map-marker-alt"></i> Port of Suez</li>
           </ul>
         </div>
       </div>
     </section>
 
     <section id="banks">
-      <h2>🏦 Major Banks in Egypt</h2>
+      <h2><i class="fas fa-university"></i> Major Banks in Egypt</h2>
       <ul class="banks">
-        <li><strong>National Bank of Egypt (NBE)</strong> – The largest and oldest commercial bank in Egypt.</li>
-        <li><strong>Banque Misr</strong> – A leading public sector bank supporting trade and development.</li>
+        <li>
+          <strong>National Bank of Egypt (NBE)</strong> – The largest and oldest commercial bank in Egypt, 
+          offering comprehensive trade finance solutions and international banking services.
+        </li>
+        <li>
+          <strong>Banque Misr</strong> – A leading public sector bank supporting trade and development 
+          with extensive branch network and digital banking platforms.
+        </li>
+        <li>
+          <strong>Commercial International Bank (CIB)</strong> – Egypt's leading private sector bank 
+          offering innovative trade finance and corporate banking solutions.
+        </li>
+        <li>
+          <strong>QNB Al Ahli</strong> – Part of the QNB Group, providing a wide range of trade 
+          finance services and international banking expertise.
+        </li>
       </ul>
     </section>
   </main>
 
   <footer>
-    <p>© 2025 Egypt Trade Portal | Designed for Global Trade Simulation</p>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-column">
+          <h3>Egypt Trade Portal</h3>
+          <p>Your gateway to trade opportunities in Egypt, connecting global partners with Egyptian markets.</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="#"><i class="fas fa-chevron-right"></i> About Us</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right"></i> Trade Statistics</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right"></i> Investment Opportunities</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right"></i> Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Resources</h3>
+          <ul class="footer-links">
+            <li><a href="#"><i class="fas fa-chevron-right"></i> Trade Regulations</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right"></i> Customs Procedures</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right"></i> Market Research</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right"></i> Business Directory</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        © 2025 Egypt Trade Portal | Designed for Global Trade Simulation
+      </div>
+    </div>
   </footer>
+
+  <script>
+    // Add scroll animation for sections
+    document.addEventListener('DOMContentLoaded', function() {
+      const sections = document.querySelectorAll('section');
+      
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = 1;
+            entry.target.style.transform = 'translateY(0)';
+          }
+        });
+      }, { threshold: 0.1 });
+      
+      sections.forEach(section => {
+        section.style.opacity = 0;
+        section.style.transform = 'translateY(20px)';
+        section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        observer.observe(section);
+      });
+    });
+  </script>
 </body>
 </html>
